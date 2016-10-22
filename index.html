@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tabPages.css"/>
+		<style type="text/css">
+			
+			.tabPageItem{
+				text-align: center;
+				line-height: 400px;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="tabPagesBox" class="tabPagesBox">
+			<ul class="tabPageHeader">
+				<li class="tabHeaderItem tabPageHeaderActive">标题一</li>
+				<li class="tabHeaderItem">标题二</li>
+				<li class="tabHeaderItem">标题三</li>
+			</ul>
+			<div class="tabPageItem" style="display: block;">内容一</div>
+			<div class="tabPageItem">内容二</div>
+			<div class="tabPageItem">内容三</div>
+		</div>
+		<script src="js/tabPages.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var atab = new TabSwitch('tabPagesBox');
+		</script>
+	</body>
+</html>

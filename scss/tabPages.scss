@@ -1,0 +1,35 @@
+@charset "UTF-8";
+//@import 'reset.scss';
+
+
+ /*标签页*/
+.tabPagesBox{
+    $tabPagesBoxHeight:800px; //标签页容器的宽度
+    $tabPagesBoxWidth:600px;  //标签页容器的高度
+    $tabPageHeaderHeight:50px; //标签页容器标题的高度
+    $tabHeaderItemWidth:$tabPagesBoxWidth / 3;  //数字为标题的个数
+    height: $tabPagesBoxHeight;
+    width: $tabPagesBoxWidth;
+    border: 1px solid red;
+    ul{
+        width: 100%;
+        height: $tabPageHeaderHeight;
+        li{
+            height: inherit;
+            width: $tabHeaderItemWidth;
+            background: lightgray;
+            text-align: center;
+            line-height: $tabPageHeaderHeight;
+            float: left;
+            cursor: pointer;
+            &.tabPageHeaderActive{
+                background: darkgray;
+            }
+        }
+    }
+    >div{
+       display: none;
+       height: $tabPagesBoxHeight - $tabPageHeaderHeight;
+       background: yellowgreen; 
+    }
+}
